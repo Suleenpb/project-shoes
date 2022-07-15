@@ -19,7 +19,7 @@ router.get("/protected/customers/:id" , auth.isLoggedIn, customerController.disp
 router.put("/protected/customers/:id", auth.isLoggedIn, customerController.update);
 router.delete("/protected/customers/:id", auth.isLoggedIn, customerController.delete);
 
-//Products
+//Owner
 const ProductController = require('../controllers/product.controller');
 const productController = new ProductController();
 
